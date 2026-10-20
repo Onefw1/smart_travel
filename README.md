@@ -2,7 +2,11 @@
 
 基于 Vue 3、TypeScript、Vite、FastAPI 和 PostgreSQL 的旅行规划项目。
 
-当前状态：已建立项目目录骨架，已有需求与架构设计文档。业务代码、依赖配置、数据库迁移和启动入口尚未实现，当前不能直接启动应用。已有文档中的计划和验收目标不代表功能已完成。
+当前状态：已实现注册、登录、退出、会话恢复和角色访问基础，已加入前后端入口、依赖锁文件及账号数据库迁移。其他业务模块仍为目录骨架。已有设计文档描述完整目标，不代表所有功能已完成。
+
+运行步骤见 [后端说明](backend/README.md)、[前端说明](frontend/README.md) 和 [本机运行说明](docs/deployment/README.md)；本次实现与验证见 [F001 账号功能](docs/development/features/F001-auth.md)。
+
+Agent 协作与开发约定见 [AGENTS.md](AGENTS.md)。
 
 ## 项目目录
 

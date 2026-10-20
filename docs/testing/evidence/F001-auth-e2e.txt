@@ -1,0 +1,21 @@
+
+Running 16 tests using 1 worker
+
+  ok  1 [chrome] › tests\e2e\auth.spec.ts:2:1 › 注册、错误凭据、登录、刷新、角色拒绝与退出闭环 (1.3s)
+  ok  2 [chrome] › tests\e2e\auth.spec.ts:70:1 › 重复注册显示字段错误 (558ms)
+  ok  3 [chrome] › tests\e2e\auth.spec.ts:97:1 › 管理员使用独立预置账号进入对应入口 (648ms)
+  ok  4 [chrome] › tests\e2e\auth.spec.ts:127:1 › 账号页面没有横向溢出且可用键盘提交 (495ms)
+  ok  5 [edge] › tests\e2e\auth.spec.ts:2:1 › 注册、错误凭据、登录、刷新、角色拒绝与退出闭环 (1.3s)
+  ok  6 [edge] › tests\e2e\auth.spec.ts:70:1 › 重复注册显示字段错误 (505ms)
+  ok  7 [edge] › tests\e2e\auth.spec.ts:97:1 › 管理员使用独立预置账号进入对应入口 (668ms)
+  ok  8 [edge] › tests\e2e\auth.spec.ts:127:1 › 账号页面没有横向溢出且可用键盘提交 (488ms)
+  ok  9 [mobile-chrome] › tests\e2e\auth.spec.ts:2:1 › 注册、错误凭据、登录、刷新、角色拒绝与退出闭环 (1.3s)
+  ok 10 [mobile-chrome] › tests\e2e\auth.spec.ts:70:1 › 重复注册显示字段错误 (566ms)
+  ok 11 [mobile-chrome] › tests\e2e\auth.spec.ts:97:1 › 管理员使用独立预置账号进入对应入口 (686ms)
+  ok 12 [mobile-chrome] › tests\e2e\auth.spec.ts:127:1 › 账号页面没有横向溢出且可用键盘提交 (618ms)
+  ok 13 [demo-chrome] › tests\e2e\auth.spec.ts:2:1 › 注册、错误凭据、登录、刷新、角色拒绝与退出闭环 (1.5s)
+  ok 14 [demo-chrome] › tests\e2e\auth.spec.ts:70:1 › 重复注册显示字段错误 (492ms)
+  ok 15 [demo-chrome] › tests\e2e\auth.spec.ts:97:1 › 管理员使用独立预置账号进入对应入口 (594ms)
+  ok 16 [demo-chrome] › tests\e2e\auth.spec.ts:127:1 › 账号页面没有横向溢出且可用键盘提交 (483ms)
+
+  16 passed (20.1s)
