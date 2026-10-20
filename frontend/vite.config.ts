@@ -7,8 +7,8 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
     proxy: {
-      '/api': { target: 'http://localhost:8000', changeOrigin: false },
-      '/health': { target: 'http://localhost:8000', changeOrigin: false },
+      '/api': { target: process.env.API_PROXY_TARGET ?? 'http://localhost:8000', changeOrigin: false },
+      '/health': { target: process.env.API_PROXY_TARGET ?? 'http://localhost:8000', changeOrigin: false },
     },
   },
   test: {

@@ -60,4 +60,6 @@ pnpm test:e2e
 
 后端 Python 默认使用项目 `.venv`，可用 `E2E_PYTHON` 指定其他实际可执行文件。未提供测试管理员时，对应场景明确跳过。测试覆盖开发模式的 Chrome、Edge、手机视口，以及后端托管构建产物的 Chrome 演示模式；运行前先执行 `pnpm build`。手机视口不等于真机验收。结果和截图在 `docs/testing/evidence/F001-auth-*`，禁用可能包含凭据的 trace/HAR。
 
+已有开发服务运行时，可设置 `E2E_BACKEND_PORT=8001`、`E2E_FRONTEND_PORT=5174` 使用备用测试端口；测试仍单独启动服务并连接显式指定的测试库。代理目标通过仅服务端使用的 `API_PROXY_TARGET` 传递，正常开发默认仍连接 8000。本轮最终 JSON 报告为 `docs/testing/evidence/F001-auth-submission-e2e.json`。
+
 界面建筑图由项目内 SVG/CSS 绘制，无外部图片或字体依赖。真实验证见 [测试报告](../docs/testing/reports/F001-auth.md)。

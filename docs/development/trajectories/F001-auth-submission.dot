@@ -1,0 +1,16 @@
+digraph AuthTrajectory {
+  graph [rankdir=TB, bgcolor="white", pad="0.35", nodesep="0.4", ranksep="0.35", fontname="Microsoft YaHei", fontsize=22, label="F001 注册、登录与会话权限\n真实开发 Trajectory", labelloc=t];
+  node [shape=box, style="rounded,filled", fillcolor="#eef5f1", color="#2a6656", fontname="Microsoft YaHei", fontsize=15, margin="0.2,0.13", width=5];
+  edge [color="#678579", arrowsize=0.8, fontname="Microsoft YaHei", fontsize=12];
+  scope [label="用户确认：注册＋登录\n明确账号规则、角色与会话契约"];
+  implement [label="Agent 实现前后端、迁移与测试\n用户决定范围，Codex 执行与验证"];
+  failure [label="真实反馈：数据库连通后 67 通过、2 失败\nUTC 输出差异；测试路由被静态入口遮挡", fillcolor="#fff0e8", color="#ad633f"];
+  repair [label="定位并修复\n响应时间统一 UTC；测试禁用静态挂载"];
+  regression [label="回归通过，再补事务回滚用例\n账号后端 71 项通过"];
+  confirmation [label="用户追加：注册确认密码\n空值、不一致、修改后重试等前端 26 项通过"];
+  browser [label="最终真实浏览器验收 20 项通过\nChrome、Edge、手机视口与同源演示\n独立测试库；备用端口 8001／5174"];
+  evidence [label="归档代码与真实测试输出\nAgent Development Log＋流程图＋提交入口\n已有功能提交：39b2675"];
+  participation [shape=note, style=filled, fillcolor="#f5f2e6", color="#9f915b", width=4, label="参与事实：用户确认仅本人参与\n记录人机协作，不声称多人分工\n未模拟未发生的团队评审"];
+  scope -> implement -> failure -> repair -> regression -> confirmation -> browser -> evidence;
+  participation -> implement [style=dashed, arrowhead=none, constraint=false];
+}

@@ -1,0 +1,846 @@
+{
+  "config": {
+    "configFile": "D:\\Documents\\lecture homework\\travel\\frontend\\playwright.config.ts",
+    "rootDir": "D:/Documents/lecture homework/travel/frontend/tests/e2e",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../docs/testing/evidence/F001-auth-submission-e2e.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Documents/lecture homework/travel/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "D:/Documents/lecture homework/travel/frontend/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/Documents/lecture homework/travel/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "edge",
+        "name": "edge",
+        "testDir": "D:/Documents/lecture homework/travel/frontend/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/Documents/lecture homework/travel/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile-chrome",
+        "name": "mobile-chrome",
+        "testDir": "D:/Documents/lecture homework/travel/frontend/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/Documents/lecture homework/travel/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "demo-chrome",
+        "name": "demo-chrome",
+        "testDir": "D:/Documents/lecture homework/travel/frontend/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.spec.ts",
+      "file": "auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "注册、错误凭据、登录、刷新、角色拒绝与退出闭环",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1278,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:40.007Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-cbd2542bf4c23e11bdeb",
+          "file": "auth.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "重复注册显示字段错误",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 560,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:41.634Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-2351093393b6d38e0270",
+          "file": "auth.spec.ts",
+          "line": 73,
+          "column": 1
+        },
+        {
+          "title": "管理员使用独立预置账号进入对应入口",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 667,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:42.207Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-b2f11f0adfbe77478598",
+          "file": "auth.spec.ts",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "账号页面没有横向溢出且可用键盘提交",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "browser",
+                  "description": "155.0.8059.85"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 515,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:42.884Z",
+                  "annotations": [
+                    {
+                      "type": "browser",
+                      "description": "155.0.8059.85"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-d438706af9d9e8dac2a3",
+          "file": "auth.spec.ts",
+          "line": 133,
+          "column": 1
+        },
+        {
+          "title": "注册确认密码必须填写且精确一致，匹配后可真实注册",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 580,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:43.418Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-963261076b43c1ab9610",
+          "file": "auth.spec.ts",
+          "line": 167,
+          "column": 1
+        },
+        {
+          "title": "注册、错误凭据、登录、刷新、角色拒绝与退出闭环",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1505,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:45.010Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-590177e943b8bd1aac99",
+          "file": "auth.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "重复注册显示字段错误",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 580,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:46.855Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-a2fde2593d304346034f",
+          "file": "auth.spec.ts",
+          "line": 73,
+          "column": 1
+        },
+        {
+          "title": "管理员使用独立预置账号进入对应入口",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 684,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:47.450Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-e0dd30afff60a991c753",
+          "file": "auth.spec.ts",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "账号页面没有横向溢出且可用键盘提交",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "browser",
+                  "description": "155.0.4283.62"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 521,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:48.145Z",
+                  "annotations": [
+                    {
+                      "type": "browser",
+                      "description": "155.0.4283.62"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-e2e8f567392fb70e37a0",
+          "file": "auth.spec.ts",
+          "line": 133,
+          "column": 1
+        },
+        {
+          "title": "注册确认密码必须填写且精确一致，匹配后可真实注册",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 551,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:48.683Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-483bad17aa3f55dd6e53",
+          "file": "auth.spec.ts",
+          "line": 167,
+          "column": 1
+        },
+        {
+          "title": "注册、错误凭据、登录、刷新、角色拒绝与退出闭环",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chrome",
+              "projectName": "mobile-chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1428,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:50.307Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-05825e3c2dd33cf23c10",
+          "file": "auth.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "重复注册显示字段错误",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chrome",
+              "projectName": "mobile-chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 656,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:51.974Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-93f78000de9e2d628fcc",
+          "file": "auth.spec.ts",
+          "line": 73,
+          "column": 1
+        },
+        {
+          "title": "管理员使用独立预置账号进入对应入口",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chrome",
+              "projectName": "mobile-chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 731,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:52.644Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-bd1b54050c6bf20f71c9",
+          "file": "auth.spec.ts",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "账号页面没有横向溢出且可用键盘提交",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "browser",
+                  "description": "155.0.8059.85"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chrome",
+              "projectName": "mobile-chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 588,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:53.384Z",
+                  "annotations": [
+                    {
+                      "type": "browser",
+                      "description": "155.0.8059.85"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-9a2c28f382e9cacf4cf2",
+          "file": "auth.spec.ts",
+          "line": 133,
+          "column": 1
+        },
+        {
+          "title": "注册确认密码必须填写且精确一致，匹配后可真实注册",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile-chrome",
+              "projectName": "mobile-chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 607,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:53.990Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-f65f4f0a6ac554bbfb39",
+          "file": "auth.spec.ts",
+          "line": 167,
+          "column": 1
+        },
+        {
+          "title": "注册、错误凭据、登录、刷新、角色拒绝与退出闭环",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "demo-chrome",
+              "projectName": "demo-chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1553,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:55.574Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-7284cf0a8426621b020b",
+          "file": "auth.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "重复注册显示字段错误",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "demo-chrome",
+              "projectName": "demo-chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 492,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:57.361Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-659100bc7fef13cdc18a",
+          "file": "auth.spec.ts",
+          "line": 73,
+          "column": 1
+        },
+        {
+          "title": "管理员使用独立预置账号进入对应入口",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "demo-chrome",
+              "projectName": "demo-chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 649,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:57.863Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-751aa89431a647d5837f",
+          "file": "auth.spec.ts",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "账号页面没有横向溢出且可用键盘提交",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "browser",
+                  "description": "155.0.8059.85"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "demo-chrome",
+              "projectName": "demo-chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 523,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:58.523Z",
+                  "annotations": [
+                    {
+                      "type": "browser",
+                      "description": "155.0.8059.85"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-d6b5c5f6bf9f4e97d755",
+          "file": "auth.spec.ts",
+          "line": 133,
+          "column": 1
+        },
+        {
+          "title": "注册确认密码必须填写且精确一致，匹配后可真实注册",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "demo-chrome",
+              "projectName": "demo-chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 543,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-20T15:55:59.058Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d748ac400d08b85935ef-76b2aaea287ef51e5e88",
+          "file": "auth.spec.ts",
+          "line": 167,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-20T15:55:36.707Z",
+    "duration": 23404.366,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

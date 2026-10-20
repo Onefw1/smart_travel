@@ -1,6 +1,6 @@
 # F001：注册、登录与会话权限
 
-状态：实现与自动化验证完成；待用户人工验收，未提交 Git。
+状态：实现与自动化验证完成，代码已有实际 Git 提交；待用户人工验收。课程团队人数条件单独说明。
 
 ## 需求与范围
 
@@ -9,6 +9,7 @@
 - 本次实现：初始化 Vue/FastAPI 工程，账号/会话 PostgreSQL 迁移，注册和登录页面、角色守卫、Cookie/Origin/CSRF、管理员初始化与自动化验证。
 - 不包含：景点、收藏、行程、预约、评价等业务；密码找回、账号管理；这些模块的数据所有权验证留待对应功能。
 - 人工决策：用户选择方案 2，注册与登录一起实现。成员职责：用户决定范围，Codex 实现与验证。
+- 参与人数：用户在提交检查时明确“只有我”；如实记录单人人机协作，不编造多人小组分工。
 
 ## 验收与测试
 
@@ -27,5 +28,6 @@
 - 截图：[桌面登录](../../testing/evidence/F001-auth-chrome.png)、[手机视口](../../testing/evidence/F001-auth-mobile-chrome.png)。
 - Agent Development Log：[F001-auth](../agent-logs/F001-auth.md)。
 - Trajectory：[F001-auth](../trajectories/F001-auth.md)。
-- Commit ID：未提交；开始版本 `9262b87`，保留用户已有 README.md 修改和未跟踪 AGENTS.md。
+- 功能 Commit ID：`39b26758c67bec9708821ff36fc6a88c7cb9426f`（实际 Git 记录）。开始版本为 `9262b87`；旧的“未提交”状态为当时事实，现已更新。
+- 最终验收：账号后端 **71**、前端 **26**、真实浏览器 **20** 项通过；[最终报告](../../testing/reports/F001-auth-submission.md)、[课程提交入口](../../submission/README.md)。
 - 已知限制：后续已按用户要求配置 `55432/zhiyou_dev` 开发库并初始化管理员，见 [当前本机配置](../../deployment/README.md)。尚未实现其他业务及其数据所有权验证；手机为视口模拟，未做真机或性能指标验收。后端测试有两条第三方弃用提示，未抑制。

@@ -1,0 +1,8 @@
+
+ RUN  v5.0.5 D:/Documents/lecture homework/travel/frontend
+
+
+ Test Files  4 passed (4)
+      Tests  26 passed (26)
+   Start at  23:55:29
+   Duration  1.95s (environment 75%, import 13%, transform 9%, tests 3%, worker 1%)

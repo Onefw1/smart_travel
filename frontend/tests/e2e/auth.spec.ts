@@ -42,7 +42,7 @@ test('重复注册显示字段错误', async ({ page, request }, testInfo) => {
   const username = `重复_${Date.now()}_${testInfo.project.name.slice(0, 2)}`
   await request.post('/api/v1/auth/register', {
     data: { username, password: 'test-only-password' },
-    headers: { Origin: 'http://localhost:5173' },
+    headers: { Origin: new URL(testInfo.project.use.baseURL as string).origin },
   })
   await page.goto('/#/register')
   await page.getByLabel('用户名', { exact: true }).fill(`  ${username.toUpperCase()}  `)
@@ -78,4 +78,27 @@ test('账号页面没有横向溢出且可用键盘提交', async ({ page, brows
   await expect(page.getByRole('alert')).toHaveText('用户名或密码错误')
   await page.getByLabel('密码', { exact: true }).fill('')
   await page.getByLabel('用户名', { exact: true }).fill('')
+})
+
+test('注册确认密码必须填写且精确一致，匹配后可真实注册', async ({ page, context }, testInfo) => {
+  const username = `确认_${Date.now()}_${testInfo.project.name.slice(0, 2)}`
+  let submissions = 0
+  page.on('request', request => {
+    if (request.method() === 'POST' && new URL(request.url()).pathname === '/api/v1/auth/register') submissions++
+  })
+  await page.goto('/#/register')
+  await page.getByLabel('用户名', { exact: true }).fill(username)
+  await page.getByLabel('密码', { exact: true }).fill('  abcdef')
+  await page.getByRole('button', { name: '创建账号', exact: true }).click()
+  await expect(page.locator('#confirm-password-error')).toHaveText('请再次输入密码')
+  expect(submissions).toBe(0)
+  await page.getByLabel('确认密码', { exact: true }).fill('abcdef  ')
+  await page.getByRole('button', { name: '创建账号', exact: true }).click()
+  await expect(page.locator('#confirm-password-error')).toHaveText('两次输入的密码不一致')
+  expect(submissions).toBe(0)
+  await page.getByLabel('确认密码', { exact: true }).fill('  abcdef')
+  await page.getByRole('button', { name: '创建账号', exact: true }).click()
+  await expect(page.getByRole('status')).toHaveText('注册成功，请使用新账号登录。')
+  expect(submissions).toBe(1)
+  expect((await context.cookies()).some(cookie => cookie.name === 'session_id')).toBe(false)
 })

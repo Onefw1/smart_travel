@@ -1,6 +1,6 @@
 # F001：真实开发 Trajectory
 
-状态：实现及自动化验证完成，待用户人工验收；尚未提交。
+状态：实现及自动化验证完成，功能提交 `39b2675`；待用户人工验收。完整当前提交入口见 [课程清单](../../submission/README.md)。
 
 ```mermaid
 flowchart TD
@@ -25,7 +25,7 @@ flowchart TD
 - Feature：[注册、登录与会话权限](../features/F001-auth.md)。
 - 开发日志：[F001-auth](../agent-logs/F001-auth.md)，节点分别对应步骤 1～12。
 - 测试报告：[F001-auth](../../testing/reports/F001-auth.md)。
-- 测试源码版本：[SHA-256 清单](../../testing/evidence/F001-auth-manifest.sha256)，Git 基线 `9262b87`，当前未提交。
+- 初次测试源码版本：[历史 SHA-256 清单](../../testing/evidence/F001-auth-manifest.sha256)，开发起始版本 `9262b87`。当前最终状态见文末追加证据，不用历史清单校验已迁移的启动入口。
 - 没有绘制尚未发生的团队审查、提交或全系统验收。
 
 后续确认密码追加流程（日志步骤 16）：
@@ -40,3 +40,7 @@ flowchart LR
 ```
 
 浏览器专项检查拦截注册响应，未向开发库写入测试数据；本轮未重跑完整后端和端到端套件。
+
+提交前追加验收（日志步骤 17～19）：为避免占用开发端口，在独立测试库和备用 8001/5174 端口重新执行最终版本，账号后端 71、前端 26、真实浏览器 20 项通过，补齐确认密码真实注册证据。可直接查看 [PNG](F001-auth-submission.png) 或 [SVG](F001-auth-submission.svg)，绘图源为 [DOT](F001-auth-submission.dot)。
+
+用户确认只有本人参与，图与日志不声称多人协作。已有实际功能提交 `39b26758c67bec9708821ff36fc6a88c7cb9426f`；[最终验收报告](../../testing/reports/F001-auth-submission.md) 与 [源码清单](../../testing/evidence/F001-auth-submission-manifest.sha256) 对应当前提交状态。

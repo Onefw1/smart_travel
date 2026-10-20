@@ -1,0 +1,25 @@
+
+Running 20 tests using 1 worker
+
+  ok  1 [chrome] › tests\e2e\auth.spec.ts:2:1 › 注册、错误凭据、登录、刷新、角色拒绝与退出闭环 (1.3s)
+  ok  2 [chrome] › tests\e2e\auth.spec.ts:73:1 › 重复注册显示字段错误 (560ms)
+  ok  3 [chrome] › tests\e2e\auth.spec.ts:103:1 › 管理员使用独立预置账号进入对应入口 (667ms)
+  ok  4 [chrome] › tests\e2e\auth.spec.ts:133:1 › 账号页面没有横向溢出且可用键盘提交 (515ms)
+  ok  5 [chrome] › tests\e2e\auth.spec.ts:167:1 › 注册确认密码必须填写且精确一致，匹配后可真实注册 (580ms)
+  ok  6 [edge] › tests\e2e\auth.spec.ts:2:1 › 注册、错误凭据、登录、刷新、角色拒绝与退出闭环 (1.5s)
+  ok  7 [edge] › tests\e2e\auth.spec.ts:73:1 › 重复注册显示字段错误 (580ms)
+  ok  8 [edge] › tests\e2e\auth.spec.ts:103:1 › 管理员使用独立预置账号进入对应入口 (684ms)
+  ok  9 [edge] › tests\e2e\auth.spec.ts:133:1 › 账号页面没有横向溢出且可用键盘提交 (521ms)
+  ok 10 [edge] › tests\e2e\auth.spec.ts:167:1 › 注册确认密码必须填写且精确一致，匹配后可真实注册 (551ms)
+  ok 11 [mobile-chrome] › tests\e2e\auth.spec.ts:2:1 › 注册、错误凭据、登录、刷新、角色拒绝与退出闭环 (1.4s)
+  ok 12 [mobile-chrome] › tests\e2e\auth.spec.ts:73:1 › 重复注册显示字段错误 (656ms)
+  ok 13 [mobile-chrome] › tests\e2e\auth.spec.ts:103:1 › 管理员使用独立预置账号进入对应入口 (731ms)
+  ok 14 [mobile-chrome] › tests\e2e\auth.spec.ts:133:1 › 账号页面没有横向溢出且可用键盘提交 (588ms)
+  ok 15 [mobile-chrome] › tests\e2e\auth.spec.ts:167:1 › 注册确认密码必须填写且精确一致，匹配后可真实注册 (607ms)
+  ok 16 [demo-chrome] › tests\e2e\auth.spec.ts:2:1 › 注册、错误凭据、登录、刷新、角色拒绝与退出闭环 (1.6s)
+  ok 17 [demo-chrome] › tests\e2e\auth.spec.ts:73:1 › 重复注册显示字段错误 (492ms)
+  ok 18 [demo-chrome] › tests\e2e\auth.spec.ts:103:1 › 管理员使用独立预置账号进入对应入口 (649ms)
+  ok 19 [demo-chrome] › tests\e2e\auth.spec.ts:133:1 › 账号页面没有横向溢出且可用键盘提交 (523ms)
+  ok 20 [demo-chrome] › tests\e2e\auth.spec.ts:167:1 › 注册确认密码必须填写且精确一致，匹配后可真实注册 (543ms)
+
+  20 passed (23.4s)
